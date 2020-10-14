@@ -12,9 +12,10 @@ $this->redis->sadd('redis_list', "1");
 Bulk Hit Redis
 ******************
 
-for ($i=1; $i < 25; $i++) { 
-			$data = $this->redis->sadd('redis_list', $i);
-		}
+for ($i=1; $i < 25; $i++)
+{ 
+$this->redis->sadd('redis_list', $i);
+}
 
 *******************
 Get Redis List
